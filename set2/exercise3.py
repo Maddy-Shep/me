@@ -14,7 +14,6 @@ def is_odd(a_number):
     So if a_number modulo two is zero, then it's even.
     """
     return a_number % 2==1
-    
 
 def fix_it(moves=True, should_move=True):
     """Decide what to do.
@@ -64,7 +63,7 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    star_list = ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
+    star_list = []
     for i in range(10):
         star_list.append("*")
     return star_list
@@ -80,8 +79,6 @@ def loops_1c(number_of_items=5, symbol="#"):
     Remember that you're being passed arguments here. Don't hard code the number
     or the symbol, let it be whatever it wants to be.
     """
-    return None
-
 
 def loops_2():
     """Make a big square starfield.
