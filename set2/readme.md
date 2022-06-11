@@ -7,3 +7,4 @@ F function combines everything
 When debugging, be patience Maddy.
 == is a quality check; (is this thing the same as this thing?)
 I am currently ultra confused on what the working tree is trying to tell me.
+My compsci/business boyfriend helped me with the loops questions.
