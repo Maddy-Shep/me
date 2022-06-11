@@ -2,6 +2,10 @@
 """Modify each function until the tests pass."""
 
 
+from re import A
+from turtle import st
+
+
 def is_odd(a_number):
     """Return True if a_number is odd, and False if a_number is even.
 
@@ -79,6 +83,10 @@ def loops_1c(number_of_items=5, symbol="#"):
     Remember that you're being passed arguments here. Don't hard code the number
     or the symbol, let it be whatever it wants to be.
     """
+    list = []
+    for i in range(number_of_items):
+        list.append(symbol)
+    return list
 
 def loops_2():
     """Make a big square starfield.
@@ -98,8 +106,14 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    return None
+    star_square = []
+    for j in range(10):
+        star_list = []
+        for i in range(10):
+            star_list.append("*")
+        star_square.append(star_list)
 
+    return star_square
 
 def loops_3():
     """Make a rising block of numbers.
@@ -122,7 +136,14 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    return None
+    number_square = []
+    for j in range(10):
+        number_list = []
+        for i in range(10):
+            number_list.append(str(j))
+        number_square.append(number_list)
+
+    return number_square
 
 
 def loops_4():
@@ -142,7 +163,14 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    return None
+    number_square = []
+    for i in range(10):
+        number_list = []
+        for j in range(10):
+            number_list.append(str(j))
+        number_square.append(number_list)
+
+    return number_square
 
 
 def loops_5():
@@ -172,7 +200,14 @@ def loops_5():
         f"There are {num_bottles} green bottles"
     you'll come to see the pros and cons of each over time.
     """
-    return None
+    number_square = []
+    for i in range(10):
+        number_list = []
+        for j in range(5):
+            number_list.append("(i" + str(i) + ", j" + str(j) + ")")
+        number_square.append(number_list)
+
+    return number_square
 
 
 def loops_6():
@@ -195,7 +230,14 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    return None
+    number_square = []
+    for i in range(10):
+        number_list = []
+        for j in range(i+1):
+            number_list.append(str(j))
+        number_square.append(number_list)
+
+    return number_square
 
 
 def loops_7():
